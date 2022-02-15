@@ -9,8 +9,9 @@
 }
 
 .root {
+    width: 85%;
     margin: auto;
-    margin-top: 2.5rem;
+    margin-top: 1.5rem;
 }
 
 .main_nav {
@@ -41,12 +42,133 @@
     font-size: 18px;
 }
 
+.main_container {
+    
+    margin-top: 3rem;
+}
+.main_div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.main_div div:nth-child(2) {
+
+}
+
+.main_container-button {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.main_container-button div.num {
+    background: #F9F9FB;
+    box-shadow: 0px 1px 3px rgba(224, 225, 227, 0.4);
+    border-radius: 5px;
+    padding: 16px 24px;
+    font-weight: bold;
+}
+
+.main_container-button span {
+    margin-left: 1rem;
+}
+
+.one {
+    margin-top: 2rem;
+}
+
+.main_container-heading {
+    width: 100%;
+    text-align: center;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    color: #000000;
+}
+
+.main_container-para {
+    font-family: Open Sans;
+    font-style: normal;
+    width: 688px;
+    margin: auto;
+    margin-top: 1rem;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+    color: #595959;
+}
+
+.form {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.form-control input {
+    align-items: flex-start;
+    padding: 16px 160px 16px 24px;
+    margin-top: 1rem;
+    width: 230px;
+    height: 57px;
+    background: #FFFFFF;
+    border: 1px solid #E2E4E8;
+    box-sizing: border-box;
+    border-radius: 5px;
+
+}
+
+.form-control label, .form-control input {
+    display: block;
+}
+
+.form-control input.active {
+    border: 1px solid #255CE9;
+}
+
+div.num.active {
+    color: #fff;
+    background: #0FAF51;
+}
+
+.cta-btn {
+    margin-top: 2rem;
+    width: 85%;
+    text-align: right;
+}
+
+.cta-btn button {
+    background: #0FAF51;
+    box-shadow: 0px 1px 3px rgba(224, 225, 227, 0.4);
+    border-radius: 5px;
+    padding: 16px 24px;
+    border: 1px solid #0FAF51;
+    font-weight: bold;
+    color: #fff;
+}
 
 /* for tablets */
 
 @media (min-width: 48rem) {
     .root {
         width: 87%;
+    }
+
+    .main_container-buttons {
+        width: 100%;
+        display: flex;
+        gap: 1rem;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .main_container-button {
+        margin-bottom: 1rem;
 
     }
 }
@@ -56,6 +178,18 @@
 @media (min-width: 64rem) {
     .root {
         width: 75.64%;
-
     }
+
+    .main_container {
+        width: 100%;
+    }
+
+    .main_container-buttons {
+        width: 78%;
+        margin: auto;
+    }
+
+
+
+
 }
