@@ -9,11 +9,11 @@ function chooseNextSection() {
  currentActive[0].classList.remove("active");
 
  let value = Number(currentActive[0].innerText);
- let incValue = ++value;
-
+ let incValue = value + 1;
  const requiredNum = [...nums][incValue-1];
  requiredNum.classList.add("active");
- let elementToRemove = document.getElementById(`${value.toString()}`)
+ let elementToRemove = document.getElementById(`${value.toString()}`);
+ elementToRemove.style.display = "none";
  let nextElementToShow;
 }
 
