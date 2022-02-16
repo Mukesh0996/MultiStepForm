@@ -41,16 +41,41 @@
                             <label for="l_name">Last Name</label>
                             <input id="l_name" type="text"/>
                         </div>
+                        
                     </div>
                 </div>
-                <div class="two" id="2">
-                    
+                <div class="two hide" id="2">
+                    <div class="personal_information">Enter your personal information</div>
+                    <div class="personal_information-para">This is used to match what you wrote to confirm your identity. This is required by law.</div>
+                    <div class="form">
+                        <div class="form-control">
+                            <label for="dob">Date of Birth</label>
+                            <input class="active" id="dob" type="text" placeholder="May 5, 1976"/>
+                        </div>
+                        <div class="form-control">
+                            <label for="num">Phone Number</label>
+                            <input id="num" type="text" placeholder="521-231464"/>
+                        </div>
+                        <div class="form-control">
+                            <label for="address">Address</label>
+                            <input id="address" type="text" placeholder="15 Yemen Road, Yemen"/>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="cta-btn"><button>Next</button></div>
-            
+                <div class="three upload_identity hide" id="3">
+                    <div class="upload_identity-header">Upload Identification</div>
+                    <div class="upload_identity-para">Acceptable forms of identification are ID, Driver’s License, or College ID.</div>
+                    <div class="upload_identity-file">
+                        <svg width="37" height="31" viewBox="0 0 37 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3.5 10.85L2 0H10.541C12.4385 2.45365 12.5315 3.1 15.5 3.1H35L33.5 10.85H27.2105L21.3605 6.2L19.1645 9.14965L21.3065 10.85H18.35L12.5 6.2L9.0395 10.85H3.5V10.85ZM0.5 13.95L3.5 31H33.5L36.5 13.95H0.5Z" fill="#5F91F1"/>
+                        </svg>
+                        <span class="upload_identity-file_text">Drag and drop an image of your ID here</span>
+                    </div>
+                </div>
+                <div class="four qr-code hide" id="4"></div>
+            </div>            
         </div>
-        
+        <div class="cta-btn"><button>Next</button></div>
     </div>
     <script src="./script.js"></script>
 </body>

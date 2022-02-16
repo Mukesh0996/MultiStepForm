@@ -1,5 +1,6 @@
 const nums = document.querySelectorAll(".num");
 const nextBtn = document.querySelector(".cta-btn button");
+console.log(nextBtn);
 
 const $ = (element, eventType, callback) => element.addEventListener(eventType, callback);
 
@@ -12,9 +13,11 @@ function chooseNextSection() {
  let incValue = value + 1;
  const requiredNum = [...nums][incValue-1];
  requiredNum.classList.add("active");
+ 
  let elementToRemove = document.getElementById(`${value.toString()}`);
- elementToRemove.style.display = "none";
- let nextElementToShow;
+ elementToRemove.classList.toggle("hide");
+ let nextElementToShow = document.getElementById(`${incValue}`);
+ nextElementToShow.classList.toggle("hide");
 }
 
 $(nextBtn, "click", chooseNextSection);
