@@ -139,7 +139,7 @@ div.num.active {
     width: 100%;
 }
 
-.personal_information, .upload_identity-header {
+.personal_information, .upload_identity-header, .qr-code_heading {
     font-family: Open Sans;
     font-style: normal;
     font-weight: bold;
@@ -149,11 +149,12 @@ div.num.active {
     color: #000000;
 }
 
-.personal_information-para, .upload_identity-para {
+.personal_information-para, .upload_identity-para, .qr-code_para {
     text-align: center;
     font-family: Open Sans;
     color: #595959;
     font-size: 18px;
+    margin: auto;
     margin-top: 1rem;
 }
 
@@ -188,6 +189,11 @@ div.num.active {
 
 .show {
     display: block;
+}
+.qr-code_image {
+    display: block;
+    margin: auto;
+    margin-top: 1rem;
 }
 
 /* for tablets */
@@ -241,7 +247,7 @@ div.num.active {
         margin: auto;
     }
 
-    .main_container-para {
+    .main_container-para, .qr-code_para {
         width: 61.430%;
     }
 
@@ -260,4 +266,5 @@ div.num.active {
     .upload_identity-file{
         width: 55%;
     }
+   
 }
