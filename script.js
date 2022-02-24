@@ -1,6 +1,6 @@
 const nums = document.querySelectorAll(".num");
 const nextBtn = document.querySelector(".cta-btn button");
-console.log(nextBtn);
+
 
 const $ = (element, eventType, callback) => element.addEventListener(eventType, callback);
 
@@ -10,6 +10,9 @@ function chooseNextSection() {
  currentActive[0].classList.remove("active");
 
  let value = Number(currentActive[0].innerText);
+ if(value === 4) {
+     return;
+ }
  let incValue = value + 1;
  const requiredNum = [...nums][incValue-1];
  requiredNum.classList.add("active");
