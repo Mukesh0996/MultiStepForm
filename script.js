@@ -7,13 +7,15 @@ const $ = (element, eventType, callback) => element.addEventListener(eventType, 
 function chooseNextSection() {
     //find the html element which has the active class and remove it
  const currentActive = [...nums].filter(num => num.classList.contains("active"));
- currentActive[0].classList.remove("active");
-
  let value = Number(currentActive[0].innerText);
  if(value === 4) {
-     return;
- }
+    return;
+}
+ currentActive[0].classList.remove("active");
+
+
  let incValue = value + 1;
+
  const requiredNum = [...nums][incValue-1];
  requiredNum.classList.add("active");
  
